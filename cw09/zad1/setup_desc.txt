@@ -1,0 +1,8 @@
+P - number of producers
+K - number of consumers
+N - size of queue
+text_file - path to text file
+L - line length
+seek_mode - -1 - less than L, 0 - equal to L, 1 - more than L
+write_mode - 1 - report everything, 2 - report only if line meets seek_mode criteria
+nk - 0 - read whole file, >0 - read for nk seconds

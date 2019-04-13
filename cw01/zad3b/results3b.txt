@@ -1,0 +1,175 @@
+static O1 library tests:
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.450 user:0.430 system:0.010
+find in array
+real:0.100 user:0.100 system:0.000
+deallocate method 1
+real:0.450 user:0.430 system:0.020
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.450 user:0.430 system:0.000
+find in array
+real:0.100 user:0.100 system:0.000
+deallocate method 2
+real:0.420 user:0.420 system:0.000
+
+static O2 library tests:
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.450 user:0.430 system:0.000
+find in array
+real:0.100 user:0.100 system:0.000
+deallocate method 1
+real:0.450 user:0.420 system:0.030
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.440 user:0.430 system:0.000
+find in array
+real:0.110 user:0.100 system:0.000
+deallocate method 2
+real:0.420 user:0.430 system:0.000
+
+static Os library tests:
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.490 user:0.480 system:0.000
+find in array
+real:0.100 user:0.100 system:0.000
+deallocate method 1
+real:0.590 user:0.530 system:0.010
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.480 user:0.470 system:0.000
+find in array
+real:0.110 user:0.110 system:0.000
+deallocate method 2
+real:0.530 user:0.520 system:0.000
+
+shared O1 library tests:
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.440 user:0.420 system:0.000
+find in array
+real:0.100 user:0.100 system:0.000
+deallocate method 1
+real:0.430 user:0.430 system:0.010
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.430 user:0.420 system:0.010
+find in array
+real:0.100 user:0.100 system:0.000
+deallocate method 2
+real:0.420 user:0.410 system:0.000
+
+shared O2 library tests:
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.450 user:0.430 system:0.010
+find in array
+real:0.100 user:0.100 system:0.000
+deallocate method 1
+real:0.440 user:0.430 system:0.020
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.450 user:0.450 system:0.000
+find in array
+real:0.100 user:0.100 system:0.000
+deallocate method 2
+real:0.460 user:0.460 system:0.000
+
+shared Os library tests:
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.480 user:0.460 system:0.010
+find in array
+real:0.100 user:0.100 system:0.000
+deallocate method 1
+real:0.540 user:0.520 system:0.020
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.490 user:0.470 system:0.010
+find in array
+real:0.110 user:0.110 system:0.000
+deallocate method 2
+real:0.520 user:0.520 system:0.000
+
+dynamic O1 library tests:
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.430 user:0.400 system:0.020
+find in array
+real:0.100 user:0.100 system:0.000
+deallocate method 1
+real:0.480 user:0.470 system:0.010
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.440 user:0.410 system:0.020
+find in array
+real:0.100 user:0.100 system:0.000
+deallocate method 2
+real:0.430 user:0.430 system:0.000
+
+dynamic O2 library tests:
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.440 user:0.420 system:0.010
+find in array
+real:0.090 user:0.100 system:0.000
+deallocate method 1
+real:0.820 user:0.520 system:0.050
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.560 user:0.460 system:0.010
+find in array
+real:0.110 user:0.110 system:0.000
+deallocate method 2
+real:0.480 user:0.470 system:0.000
+
+dynamic Os library tests:
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.540 user:0.510 system:0.000
+find in array
+real:0.120 user:0.110 system:0.000
+deallocate method 1
+real:0.650 user:0.590 system:0.030
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.600 user:0.480 system:0.010
+find in array
+real:0.110 user:0.110 system:0.000
+deallocate method 2
+real:0.700 user:0.540 system:0.020
+
+
+
+
+WNIOSKI:
+1) Miedzy poziomami O1 oraz O2 nie ma znaczacej roznicy w predkosci wykonywania funkcji
+2) W porownaniu z O1 oraz O2, Os dziala znacznie wolniej. Spowolnienie to jest szczegolnie zauwazalne przy testach z udzialem biblioteki ladowanej dynamicznie podczas wykonywania programu.
+
+
+
+
+
+
+

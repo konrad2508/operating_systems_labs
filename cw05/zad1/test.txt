@@ -1,0 +1,9 @@
+ps | wc -l
+ls -l | wc -l
+ls -l | grep main
+ls -l | grep main | echo hello
+ls -l | grep main | echo hello | echo drugieecho
+ls -l | grep main | echo hello | echo drugieecho | echo trzecieecho
+ps
+lsalsl -l | grep main
+echo noweecho

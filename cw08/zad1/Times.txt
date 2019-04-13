@@ -1,0 +1,36 @@
+Source: test.pgm, 1 threads, 3x3 kernel
+Real time: 0.030000
+
+Source: test.pgm, 2 threads, 3x3 kernel
+Real time: 0.020000
+
+Source: test.pgm, 4 threads, 3x3 kernel
+Real time: 0.010000
+
+Source: test.pgm, 8 threads, 3x3 kernel
+Real time: 0.010000
+
+Source: test.pgm, 1 threads, 5x5 kernel
+Real time: 0.090000
+
+Source: test.pgm, 2 threads, 5x5 kernel
+Real time: 0.040000
+
+Source: test.pgm, 4 threads, 5x5 kernel
+Real time: 0.020000
+
+Source: test.pgm, 8 threads, 5x5 kernel
+Real time: 0.020000
+
+Source: test.pgm, 1 threads, 10x10 kernel
+Real time: 0.340000
+
+Source: test.pgm, 2 threads, 10x10 kernel
+Real time: 0.170000
+
+Source: test.pgm, 4 threads, 10x10 kernel
+Real time: 0.090000
+
+Source: test.pgm, 8 threads, 10x10 kernel
+Real time: 0.100000
+

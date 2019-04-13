@@ -1,0 +1,63 @@
+static library tests:
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.480 user:0.450 system:0.010
+find in array
+real:0.100 user:0.100 system:0.010
+deallocate method 1
+real:0.480 user:0.440 system:0.030
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.480 user:0.460 system:0.000
+find in array
+real:0.100 user:0.100 system:0.000
+deallocate method 2
+real:0.460 user:0.460 system:0.000
+
+shared library tests:
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.480 user:0.460 system:0.000
+find in array
+real:0.100 user:0.100 system:0.000
+deallocate method 1
+real:0.480 user:0.480 system:0.010
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.480 user:0.450 system:0.010
+find in array
+real:0.100 user:0.100 system:0.000
+deallocate method 2
+real:0.460 user:0.460 system:0.000
+
+dynamic library tests:
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.470 user:0.450 system:0.010
+find in array
+real:0.110 user:0.110 system:0.000
+deallocate method 1
+real:0.470 user:0.470 system:0.000
+
+number_of_elements = 10000, block_size = 5000
+allocating array
+real:0.480 user:0.460 system:0.000
+find in array
+real:0.100 user:0.110 system:0.000
+deallocate method 2
+real:0.450 user:0.450 system:0.000
+
+WNIOSKI: 
+1) alokacja tablicy oraz blokow w kazdym tescie zajela mniej wiecej tyle samo czasu
+2) tak samo ma sie sprawa z funkcja wyszukujaca w tablicy
+3) a takze z dealokacja oraz ponowna alokacja. Przy czym metoda 2 (naprzemienna dealokacja i alokacja blokow) jest szybsza niz metoda 1 (najpierw dealokacja wszystkiego pozniej ponowna alokacja blokow)
+
+
+
+
+

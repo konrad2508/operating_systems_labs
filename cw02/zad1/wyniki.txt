@@ -1,0 +1,41 @@
+sort sys: record_number = 2000 record_size = 4 user: 1.02000 system: 4.11000
+copy sys: record_number = 2000 record_size = 4 user: 0.00000 system: 0.00000
+sort lib: record_number = 2000 record_size = 4 user: 1.60000 system: 4.70000
+copy lib: record_number = 2000 record_size = 4 user: 0.00000 system: 0.00000
+sort sys: record_number = 4000 record_size = 4 user: 4.30000 system: 15.18000
+copy sys: record_number = 4000 record_size = 4 user: 0.00000 system: 0.01000
+sort lib: record_number = 4000 record_size = 4 user: 6.81000 system: 18.65000
+copy lib: record_number = 4000 record_size = 4 user: 0.00000 system: 0.00000
+sort sys: record_number = 2000 record_size = 512 user: 0.97000 system: 4.11000
+copy sys: record_number = 2000 record_size = 512 user: 0.00000 system: 0.00000
+sort lib: record_number = 2000 record_size = 512 user: 1.70000 system: 5.10000
+copy lib: record_number = 2000 record_size = 512 user: 0.00000 system: 0.00000
+sort sys: record_number = 4000 record_size = 512 user: 3.88000 system: 16.13000
+copy sys: record_number = 4000 record_size = 512 user: 0.00000 system: 0.00000
+sort lib: record_number = 4000 record_size = 512 user: 6.54000 system: 20.03000
+copy lib: record_number = 4000 record_size = 512 user: 0.00000 system: 0.00000
+sort sys: record_number = 2000 record_size = 4096 user: 1.00000 system: 5.65000
+copy sys: record_number = 2000 record_size = 4096 user: 0.00000 system: 0.01000
+sort lib: record_number = 2000 record_size = 4096 user: 2.42000 system: 9.76000
+copy lib: record_number = 2000 record_size = 4096 user: 0.00000 system: 0.00000
+sort sys: record_number = 4000 record_size = 4096 user: 3.84000 system: 23.59000
+copy sys: record_number = 4000 record_size = 4096 user: 0.00000 system: 0.02000
+sort lib: record_number = 4000 record_size = 4096 user: 9.01000 system: 39.42000
+copy lib: record_number = 4000 record_size = 4096 user: 0.00000 system: 0.01000
+sort sys: record_number = 2000 record_size = 8192 user: 0.96000 system: 8.02000
+copy sys: record_number = 2000 record_size = 8192 user: 0.00000 system: 0.01000
+sort lib: record_number = 2000 record_size = 8192 user: 2.73000 system: 12.92000
+copy lib: record_number = 2000 record_size = 8192 user: 0.00000 system: 0.01000
+sort sys: record_number = 4000 record_size = 8192 user: 3.90000 system: 32.04000
+copy sys: record_number = 4000 record_size = 8192 user: 0.00000 system: 0.02000
+sort lib: record_number = 4000 record_size = 8192 user: 10.54000 system: 54.43000
+copy lib: record_number = 4000 record_size = 8192 user: 0.00000 system: 0.03000
+
+
+WNIOSKI:
+W kazdym przypadku wersja systemowa funkcji dzialala szybciej niz wersja biblioteczna.
+Ten fakt mial szczegolne znaczenie przy sortowaniu, sortowanie za pomoca funkcji bibliotecznych
+dzialalo znacznie dluzej niz za pomoca funkcji systemowych.
+Przy kopiowaniu nie mialo to wiekszego znaczenia, gdyz samo kopiowanie bylo praktycznie
+natychmiastowe.
+
